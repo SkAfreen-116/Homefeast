@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | HomeFeast</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            🍲 HomeFeast
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html" class="active">
+                Menu
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="register.html"
+               class="nav-register">
+                Register
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <p class="section-label">
+                HOMEMADE WITH LOVE
+            </p>
+
+            <h1>
+                Explore Our Menu
+            </h1>
+
+            <p>
+                Discover fresh and delicious food
+                prepared by local home cooks.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+
+            <!-- SEARCH -->
+
+            <div class="menu-tools">
+
+                <div class="search-box">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        id="foodSearch"
+                        placeholder="Search for food...">
+
+                </div>
+
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="biryani">
+                        Biryani
+                    </option>
+
+                    <option value="meals">
+                        Meals
+                    </option>
+
+                    <option value="breakfast">
+                        Breakfast
+                    </option>
+
+                    <option value="snacks">
+                        Snacks
+                    </option>
+
+                    <option value="desserts">
+                        Desserts
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="category-buttons">
+
+                <button class="category-btn active"
+                        data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn"
+                        data-category="biryani">
+                    🍚 Biryani
+                </button>
+
+                <button class="category-btn"
+                        data-category="meals">
+                    🍛 Meals
+                </button>
+
+                <button class="category-btn"
+                        data-category="breakfast">
+                    🍳 Breakfast
+                </button>
+
+                <button class="category-btn"
+                        data-category="snacks">
+                    🥨 Snacks
+                </button>
+
+                <button class="category-btn"
+                        data-category="desserts">
+                    🍰 Desserts
+                </button>
+
+            </div>
+
+
+            <!-- FOOD GRID -->
+
+            <div class="food-grid menu-food-grid">
+
+
+                <div class="food-card"
+                     data-category="biryani"
+                     data-name="chicken biryani">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=80"
+                            alt="Chicken Biryani">
+
+                        <span class="food-badge">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title-row">
+
+                            <h3>
+                                Chicken Biryani
+                            </h3>
+
+                            <span class="rating">
+                                ⭐ 4.8
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Spicy homemade chicken biryani.
+                        </p>
+
+                        <small class="cook-name">
+                            👩‍🍳 Ayesha's Kitchen
+                        </small>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹150
+                            </strong>
+
+                            <button
+                                class="small-btn add-cart"
+                                data-name="Chicken Biryani"
+                                data-price="150">
+
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="food-card"
+                     data-category="meals"
+                     data-name="homemade meals">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"
+                            alt="Homemade Meals">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title-row">
+
+                            <h3>
+                                Homemade Meals
+                            </h3>
+
+                            <span class="rating">
+                                ⭐ 4.7
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Complete nutritious homemade meal.
+                        </p>
+
+                        <small class="cook-name">
+                            👩‍🍳 Lakshmi's Kitchen
+                        </small>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹100
+                            </strong>
+
+                            <button
+                                class="small-btn add-cart"
+                                data-name="Homemade Meals"
+                                data-price="100">
+
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="food-card"
+                     data-category="breakfast"
+                     data-name="idli">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=80"
+                            alt="Idli">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title-row">
+
+                            <h3>
+                                Soft Idli
+                            </h3>
+
+                            <span class="rating">
+                                ⭐ 4.9
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Fresh soft idlis with chutney.
+                        </p>
+
+                        <small class="cook-name">
+                            👩‍🍳 Amma's Kitchen
+                        </small>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹50
+                            </strong>
+
+                            <button
+                                class="small-btn add-cart"
+                                data-name="Soft Idli"
+                                data-price="50">
+
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="food-card"
+                     data-category="desserts"
+                     data-name="gulab jamun">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+                            alt="Gulab Jamun">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title-row">
+
+                            <h3>
+                                Gulab Jamun
+                            </h3>
+
+                            <span class="rating">
+                                ⭐ 4.8
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Soft and delicious homemade dessert.
+                        </p>
+
+                        <small class="cook-name">
+                            👩‍🍳 Sweet Home
+                        </small>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹80
+                            </strong>
+
+                            <button
+                                class="small-btn add-cart"
+                                data-name="Gulab Jamun"
+                                data-price="80">
+
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
